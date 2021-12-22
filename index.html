@@ -5,6 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная страница</title>
+
+    <style>
+      /* 
+      Специфичность селекторов:
+        тег: 0001
+        класс: 0010
+        айдишник: 0100
+        1000
+    */
+
+      .big-text {
+        color: green;
+      }
+
+      .red-text {
+        color: rgb(255, 0, 0);
+        background-color: gray;
+      }
+
+      p {
+        color: blue;
+      }
+
+      #title1 {
+        color: pink;
+      }
+
+      #title2 {
+        color: orange;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    </style>
+
+    <!-- 
+      шестнадцатирчная система:
+      0-9 a,b,c,d,e,f
+
+      10
+     -->
   </head>
   <body>
     <header>
@@ -27,7 +68,7 @@
     <!-- (div>h1{Заголовок $}+p>lorem)*10 -->
     <main>
       <article>
-        <h1 id="title1">Заголовок 1</h1>
+        <h1 class="red-text big-text" id="title1" style="color:black">Заголовок 1</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut excepturi
           deserunt modi distinctio, vero cupiditate deleniti est rem qui,
@@ -36,17 +77,17 @@
         </p>
       </article>
       <article>
-        <h1 id="title2">Заголовок 2</h1>
-        <p>
+        <h1 class="red-text" id="title2">Заголовок 2</h1>
+        <p class="red-text">
           Esse aliquid laudantium blanditiis, nobis magnam quis architecto
           impedit! Eveniet velit praesentium, nesciunt ex reprehenderit a
-          laudantium nemo debitis explicabo architecto minima libero corporis quia
-          neque nam repudiandae vitae vero.
+          laudantium nemo debitis explicabo architecto minima libero corporis
+          quia neque nam repudiandae vitae vero.
         </p>
       </article>
       <article>
         <h1 id="title3">Заголовок 3</h1>
-        <p>
+        <p class="red-text">
           Minus voluptatum nostrum aperiam, debitis ut mollitia sit eum corrupti
           obcaecati laboriosam aut libero aliquam cum quae consectetur at
           molestiae alias voluptas, asperiores tempora quas eligendi animi
@@ -72,19 +113,19 @@
         </p>
       </div>
       <div>
-        <h1 id="title6">Заголовок 6</h1>
+        <h1 class="red-text" id="title6">Заголовок 6</h1>
         <p>
-          Temporibus mollitia maiores magnam aliquid quisquam qui porro quibusdam
-          minus voluptate, libero aspernatur, eos veniam odio. Pariatur rem facere
-          consequatur sapiente! Consectetur nesciunt obcaecati dolorem itaque,
-          libero quibusdam architecto numquam?
+          Temporibus mollitia maiores magnam aliquid quisquam qui porro
+          quibusdam minus voluptate, libero aspernatur, eos veniam odio.
+          Pariatur rem facere consequatur sapiente! Consectetur nesciunt
+          obcaecati dolorem itaque, libero quibusdam architecto numquam?
         </p>
       </div>
       <div>
         <h1 id="title7">Заголовок 7</h1>
         <p>
-          Omnis soluta magnam ratione eaque accusamus, voluptatum voluptatem est,
-          officiis, nobis aut enim corrupti! Repellat quos reiciendis saepe
+          Omnis soluta magnam ratione eaque accusamus, voluptatum voluptatem
+          est, officiis, nobis aut enim corrupti! Repellat quos reiciendis saepe
           distinctio accusamus nam temporibus. Incidunt ab officia modi
           reprehenderit dolor doloremque eveniet.
         </p>
@@ -102,9 +143,9 @@
         <h1 id="title9">Заголовок 9</h1>
         <p>
           Beatae officiis delectus sed culpa omnis ex voluptate asperiores
-          reprehenderit aliquid necessitatibus repudiandae minus temporibus soluta
-          voluptatem enim fugiat placeat suscipit, quos eos veritatis, labore
-          alias. Esse libero iure atque?
+          reprehenderit aliquid necessitatibus repudiandae minus temporibus
+          soluta voluptatem enim fugiat placeat suscipit, quos eos veritatis,
+          labore alias. Esse libero iure atque?
         </p>
       </div>
       <div>
