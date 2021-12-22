@@ -1,0 +1,22 @@
+.article {
+  background-color: gray;
+}
+
+.article-heading {
+  font-size: 36px;
+  text-align: center;
+}
+
+.article-text {
+  font-size: 30px;
+  line-height: 2em;
+  text-align: justify;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.btn {
+  text-transform: lowercase;
+  text-transform: capitalize;
+}
