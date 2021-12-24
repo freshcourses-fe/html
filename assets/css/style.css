@@ -15,8 +15,16 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
+.object-pos-top {
+  object-position: top;
+}
+
+.object-pos-right {
+  object-position: right;
+}
 .wrapper {
   border: 10px solid springgreen;
   /* height: 500px; */
