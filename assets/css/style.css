@@ -5,13 +5,15 @@
 }
 
 .wrapper {
+ width: 200px;
+ height: 300px;
+ border: 5px solid;
+ padding: 10px;
+}
+
+.inner {
+  border: 10px solid red;
   width: 100%;
-  height: 650px;
-  border: 10px solid black;
-  background-color: cornflowerblue;
-  background-image: url(https://8v7ok1nfoar47gb1lefxg214-wpengine.netdna-ssl.com/wp-content/uploads/2015/03/pick-a-pet-1156x650-1.jpg),
-    url(https://gamedata.britishcouncil.org/sites/default/files/attachment/RS1276_Tiger%20col-int_0.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
+  height: 100%;
+  overflow-y: auto;
 }
