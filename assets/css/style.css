@@ -1,11 +1,19 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
 }
 
 ul {
-  /* list-style: none; */
+  list-style: none;
+  /* list-style-type: ; */
+  /* list-style-position: ; */
+  /* list-style-image: ; */
+
+    /* list-style-position: inside; */
+
+    /* list-style-type: upper-roman; */
+    /* list-style-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Flag_of_Canada_%28leaf%29.svg/577px-Flag_of_Canada_%28leaf%29.svg.png'); */
 }
 
 h1 {
