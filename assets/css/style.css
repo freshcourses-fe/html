@@ -4,27 +4,45 @@
   padding: 0;
 }
 
-.header {
-  width: 50vw;
-  height: 50vh;
-  border: 10px solid;
-  margin: 0 auto;
-
+.container {
+  display: inline-block;
+  border: 5px solid black;
+  color: white;
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  text-align: center;
 }
 
-.wrapper {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+.hidden-1 {
+  display: none;
+  /*
+    полностью скрывает элемент со страницы. 
+    при этом элемент не занимает свое место,
+     с ним нельзя взаимодействовать и
+     он не читается скринридерами,
+  */
 }
 
-.info {
-  display: inline-block;
-  width: 70%;
-  vertical-align: top;
+.hidden-2 {
+  opacity: 0.1;
+   /*
+    регулирует прозрачность элемента в диапазоне от 0 до 1
+    при 0 он полностью прозрачен но занимает свое место,
+    с ним можно взаимодействовать и виден скринридерам
+   */
+}
+
+.hidden-3 {
+  visibility: hidden;
+  /*
+    указывает видимость элементов, при значении hidden элемент
+    не показывается на странице, сним нельзя взаимодействовать и не читается 
+    ридерами но занимает свое место.
+  */
 }
 
 /*
-  vw
-  vh
+  Сделать шахматную доску 3х3 на дивах
+  для белых ячеек использовать скрытые элементы
 */
