@@ -1,45 +1,29 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
 }
 
 .container {
-  display: inline-block;
-  border: 5px solid black;
-  color: white;
-  background-color: blue;
-  width: 100px;
-  height: 100px;
+  /* border: 5px solid black; */
+
+  width: 1000px;
+  height: 1000px;
   text-align: center;
+  margin: 0 auto;
+  font-size: 0;
 }
 
-.hidden-1 {
-  display: none;
-  /*
-    полностью скрывает элемент со страницы. 
-    при этом элемент не занимает свое место,
-     с ним нельзя взаимодействовать и
-     он не читается скринридерами,
-  */
+.tile {
+  display: inline-block;
+  background-color: black;
+  width: 12.5%;
+  height: 12.5%;
+  opacity: 0;
 }
 
-.hidden-2 {
-  opacity: 0.1;
-   /*
-    регулирует прозрачность элемента в диапазоне от 0 до 1
-    при 0 он полностью прозрачен но занимает свое место,
-    с ним можно взаимодействовать и виден скринридерам
-   */
-}
-
-.hidden-3 {
-  visibility: hidden;
-  /*
-    указывает видимость элементов, при значении hidden элемент
-    не показывается на странице, сним нельзя взаимодействовать и не читается 
-    ридерами но занимает свое место.
-  */
+.visible {
+  opacity: 1;
 }
 
 /*
