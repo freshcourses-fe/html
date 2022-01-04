@@ -1,42 +1,42 @@
 * {
   box-sizing: border-box;
-  margin: 0; 
-   padding: 0; 
+  margin: 0;
+  padding: 0;
 }
 
-a {
-  color: inherit;
+body {
+  height: 150vh;
 }
 
-:root {
-  --main-color: green;
-  --font-size-small: 10px;
-  --bonus-color: red;
-  --main-color-2: blue;
+.box {
+  width: 80px;
+  height: 80px;
+  border: 5px solid black;
+  text-align: center;
+  background-color: lightgreen;
 }
 
-li {
-  color: var(--main-color);
-  font-size: var(--font-size-small);
+.fixed {
+  position: fixed;
 }
 
-p {
-  color: var(--main-color);
-  font-size: var(--font-size-small);
+.top {
+  top: 0;
 }
 
-h1 {
-  font-size: calc( var(--font-size-small) * 2);
+.bottom {
+  bottom: 0;
 }
 
-li:first-child {
-  color: blue;
+.left {
+  left: 0;
 }
 
-li:last-child {
-  color: green;
+.right {
+  right: 0;
 }
 
-li:nth-child(3n) {
-  color: violet;
+.center {
+  top: 50%;
+  left: 50%;
 }
