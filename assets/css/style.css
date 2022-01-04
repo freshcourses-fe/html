@@ -8,12 +8,46 @@ body {
   height: 150vh;
 }
 
+.outer {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+  background-color: lightseagreen;
+}
+
+.inner {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: navy;
+}
+
 .box {
+  position: relative;
   width: 80px;
   height: 80px;
   border: 5px solid black;
   text-align: center;
   background-color: lightgreen;
+}
+
+.wide {
+  width: 250px;
+  height: 120px;
+  text-align: center;
+  z-index: 5486453646;
+}
+
+.wide2 {
+  width: 500px;
+  background-color: orangered;
+  z-index: 64556243535;
+}
+
+.absolute {
+  position: absolute;
+  left: 150px;
+  bottom: -100px;
 }
 
 .fixed {
