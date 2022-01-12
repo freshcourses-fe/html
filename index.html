@@ -1,40 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная страница</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <nav>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="https://youtube.com" target="_blank" class="link">Home</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="link">Categories</a>
-          <ul class="sub-nav-list">
-            <li class="sub-nav-item nav-list-item"><a href="#" class="link">Man</a></li>
-            <li class="sub-nav-item nav-list-item"><a href="#" class="link">Woman</a></li>
-            <li class="sub-nav-item nav-list-item"><a href="#" class="link">kids</a></li>
-          </ul>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="link">About</a>
-        </li>
-        <li class="nav-list-item">
-          <a href="#" class="link">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum debitis
-      ipsa, tempora ea aperiam deserunt quasi, adipisci delectus at voluptatum,
-      possimus provident! Asperiores corrupti, nihil quia esse non dolorum
-      magni!
-    </p>
+    <form enctype="multipart/form-data" class="form" action="" method="get">
+      <fieldset>
+        <legend>Personal info</legend>
+        <label for="first-name"
+          >First name:
+          <input
+            type="text"
+            placeholder="Login"
+            name="first-name"
+            id="first-name"
+            pattern="^[A-Z][a-z]{2,10}$"
+            required
+            autofocus
+            value="Test"
+          />
+        </label>
+        <label for="last-name"
+          >Last name:
+          <input
+            type="text"
+            placeholder="Login"
+            pattern="^[A-Z][a-z]{2,10}$"
+            name="last-name"
+            id="last-name"
+            value="Test"
+            required
+            autofocus
+          />
+        </label>
+
+        <label>
+          Email:
+          <input
+            type="email"
+            pattern="^[A-Za-z0-9_-]{3,32}@[a-z]{2,10}\.[a-z]{1,5}$"
+            name="email"
+            placeholder="Email"
+            required
+            value="test@test.test"
+          />
+        </label>
+      </fieldset>
+      <label>
+        Password:
+        <input
+          type="password"
+          name="password"
+          pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{3,16}$"
+          placeholder="password"
+          required
+          value="1234Test"
+        />
+      </label>
+      <label>
+        Repeat password:
+        <input
+          type="password"
+          name="repeat-password"
+          placeholder="repeat password"
+          pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{3,16}$"
+          required
+          value="1234Test"
+        />
+      </label>
+
+      <fieldset>
+        <legend>Choose your gender</legend>
+
+        <label>
+          Male:
+          <input type="radio" name="gender" value="male" required />
+        </label>
+        <label>
+          Female:
+          <input type="radio" checked name="gender" value="female" />
+        </label>
+      </fieldset>
+      <label>
+        Are you an adult? <input type="checkbox" name="isAdult" />
+      </label>
+      <button type="submit">Register</button>
+        <input type="color" name="color">
+        <input type="file" name="date">
+      <button type="reset">Reset</button>
+    </form>
   </body>
 </html>
