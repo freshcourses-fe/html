@@ -11,10 +11,41 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  overflow: hidden;
+}
+
+input {
+  border: 1px solid black;
 }
 
 input:focus {
-  border: 5px solid tomato;
+  border: 1px solid tomato;
+}
+
+input:required {
+  border: 2px solid red;
+}
+
+/* :optional {
+  color: blue
+} */
+
+:checked {
+  margin-top: 50px;
+}
+
+:disabled {
+  /* color: red; */
+}
+
+/* :in-range,
+:out-of-range */
+
+input:valid {
+  border-color: green;
+}
+input:invalid {
+  border-color: red;
 }
 
 label {

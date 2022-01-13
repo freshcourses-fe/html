@@ -16,13 +16,12 @@
           >First name:
           <input
             type="text"
-            placeholder="Login"
+            placeholder="First name"
             name="first-name"
             id="first-name"
             pattern="^[A-Z][a-z]{2,10}$"
             required
             autofocus
-            value="Test"
           />
         </label>
         <label for="last-name"
@@ -33,7 +32,8 @@
             pattern="^[A-Z][a-z]{2,10}$"
             name="last-name"
             id="last-name"
-            value="Test"
+            autocomplete="pass"
+
             required
             autofocus
           />
@@ -47,7 +47,7 @@
             name="email"
             placeholder="Email"
             required
-            value="test@test.test"
+
           />
         </label>
       </fieldset>
@@ -59,7 +59,7 @@
           pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{3,16}$"
           placeholder="password"
           required
-          value="1234Test"
+
         />
       </label>
       <label>
@@ -89,9 +89,28 @@
       <label>
         Are you an adult? <input type="checkbox" name="isAdult" />
       </label>
+
+      <select name="country">
+        <optgroup label="Europe">
+          <option value="UA">Ukraine</option>
+          <option value="FR">France</option>
+        </optgroup>
+        <optgroup label="America">
+          <option value="USA" selected>United States</option>
+          <option value="CAN" selected>Canada</option>
+        </optgroup>
+      </select>
+      <label for="text">Biography </label>
+      <textarea
+        name="text"
+        id="text"
+        cols="30"
+        rows="10"
+        maxlength="50"
+      ></textarea>
+
       <button type="submit">Register</button>
-        <input type="color" name="color">
-        <input type="file" name="date">
+
       <button type="reset">Reset</button>
     </form>
   </body>
