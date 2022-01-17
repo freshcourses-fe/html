@@ -1,0 +1,22 @@
+div {
+  font-size: 40px;
+}
+
+h1 {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+h2 {
+  font-family: serif;
+}
+
+h3 {
+  font-family: 'Koluchiy';
+  font-weight: 400;
+}
+
+a {
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  font-style: italic;
+}
