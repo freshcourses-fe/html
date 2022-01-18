@@ -22,8 +22,8 @@ a {
   font-style: italic;
 }
 
-@media (max-width: 400px) {
-  h1 {
-    font-size: 80px;
+@media (min-width: 300px) and (max-width: 600px) {
+  h3 {
+    color: red;
   }
 }
