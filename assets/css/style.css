@@ -4,15 +4,36 @@
   padding: 0;
 }
 
+:root {
+  --height: 3;
+  --width: 4;
+}
+
 .wrapper {
   width: 100%;
-  max-height: 500px;
+  position: relative;
+  /* aspect-ratio: var(--width) / var(--height); */
+}
+
+.hack {
+  padding-top: calc( var(--height) / var(--width) * 100%);
+  border: 5px solid red;
 }
 
 .img {
   display: block;
   width: 100%;
-  height: inherit;
+  height: 100%;
   object-fit: cover;
   object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* inset: 5px 10px; */
 }
+
+/* 16/100% = 9/x
+
+x= 9 * 100 / 16 */
