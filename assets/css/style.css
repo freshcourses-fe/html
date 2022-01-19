@@ -4,63 +4,36 @@
   padding: 0;
 }
 
-.form {
-  width: 350px;
-  border: 5px solid;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  overflow: hidden;
+:root {
+  font-size: 30px;
 }
 
-input {
-  border: 1px solid black;
+.parent {
+  font-size: 20px;
 }
 
-input:focus {
-  border: 1px solid tomato;
+.child {
+  font-size: 3em;
 }
 
-input:required {
-  border: 2px solid red;
+.human {
+  font-size: 2rem;
 }
 
-/* :optional {
-  color: blue
-} */
+@media (max-width: 600px) {
+  :root {
+    font-size: 15px;
+  }
 
-:checked {
-  margin-top: 50px;
-}
+  .parent {
+    font-size: 24px;
+  }
 
-:disabled {
-  /* color: red; */
-}
+  .child {
+    font-size: 8px;
+  }
 
-/* :in-range,
-:out-of-range */
-
-input:valid {
-  border-color: green;
-}
-input:invalid {
-  border-color: red;
-}
-
-label {
-  display: flex;
-  justify-content: space-between;
-}
-
-label + label {
-  margin-top: 5px;
-}
-
-fieldset {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 20px;
-  margin-bottom: 20px;
+  .human {
+    font-size: 30px;
+  }
 }
